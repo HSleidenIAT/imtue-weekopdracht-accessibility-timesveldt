@@ -36,11 +36,11 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-    
+
 
       <form class="search">
-        <label aria-label="Search query"></label>
-        <input type="search" name="q" placeholder="Search query">
+        <label aria-label="Search query"></label><!-- REVIEW: nu is niet te achterhalen waar dit label bij hoort. Gebruik het for attribuut hiervoor -->
+        <input type="search" name="q" placeholder="Search query"><!-- REVIEW: hier moet de aria-label worden toegevoegd -->
         <input type="submit" value="Go!">
       </form>
     </nav>
@@ -68,10 +68,10 @@
         <br><br> -->
         <p>Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub)from another species.</p>
         <p> Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
-        <table>
+        <table><!-- REVIEW: geen caption of summary -->
           <thead>
             <tr>
-              <td>Bear Type</td>
+              <td>Bear Type</td><!-- REVIEW: dit zijn tabelheaders, hiervoor is een speciale tag. Ook is er een attribuut om aan te geven of het een rij- of kolomhoofd is. -->
               <td>Coat</td>
               <td>Adult size</td>
               <td>Habitat</td>
@@ -132,7 +132,7 @@
         <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide">Show comments</div><!-- REVIEW: deze is nog niet keyboard accessible -->
 
           <div class="comment-wrapper">
 
@@ -141,8 +141,8 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                <label for="">Your name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label for="">Your name:</label><!-- REVIEW: verkeerd gekoppeld -->
+                <input type="text" name="name" id="name" placeholder="Enter your name"><!-- REVIEW: geen aria-label -->
               </div>
               <div class="flex-pair">
                 <label for="">Your comment:</label>
@@ -190,7 +190,7 @@
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
-    
+
 
   </body>
 </html>
