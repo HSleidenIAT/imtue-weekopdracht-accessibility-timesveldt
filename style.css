@@ -90,7 +90,7 @@ article {
 
 nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ff80ff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -205,6 +205,7 @@ audio {
 
 .show-hide {
   cursor: pointer;
+  font-family: inherit;
 }
 
 .comments h2 {
